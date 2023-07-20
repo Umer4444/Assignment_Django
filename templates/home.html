@@ -1,0 +1,461 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<main class="mb-5">
+    <section class="banner">
+        <div class="container banner__img">
+            <div class="col-lg-12">
+                <div class=" banner__row">
+                    <div class="top text-center">
+                        <h1>Welcome to Assignments</h1>
+                        <br>
+                        <h4>Here you can easily get done assignments by our experts</h4>
+                    </div>
+                    <div class="col-lg-12 mt-7r">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <a href="{% url 'physics'%}" class="banner__info">
+                                    <h1>Science</h1>
+                                    <p>Your physics assignments can be a real challenge, and the due date can be
+                                        really close feel free to use our
+                                        assistance and get the desired result.
+                                    </p>
+                                    <button class="btn btn-danger width-100">Science</button>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <a href="{% url 'engineering'%}" class="banner__info">
+                                    <h1>Engineering</h1>
+                                    <p>Be sure that math assignments completed by our experts will be error-free,
+                                        done according to your instructions
+                                        specified in the submitted order form.
+                                    </p>
+                                    <button class="btn btn-danger width-100">Engineering</button>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <a href="{% url 'mathematics'%}" class="banner__info">
+                                    <h1>Mathematics</h1>
+                                    <p>Our experts will gladly share their knowledge, help with programming
+                                        projects. Keep up with the worlds
+                                        new programming.
+                                    </p>
+                                    <button class="btn btn-danger width-100">Mathematics</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src='{% static "images/home-hero-banner@2x 1.png" %}' alt="image">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="mt-7r text-center">
+                <div class="all-heading">
+                    <h3>Our Expereince</h3>
+                </div>
+                <div class="video-image">
+                    <img src='{% static "images/images.png" %}' alt="image">
+                </div>
+            </div>
+            <div class="mt-7r">
+                <div class="content__header">
+                    <a href="{% url 'signup' %}" class="content__threebox">
+                        <div class="content__box">
+                            <div class="box__title">
+                                <div class="box__digit">
+                                    <p>1</p>
+                                </div>
+                                <div class="box__text">
+                                    <p>Submit Assignment</p>
+                                </div>
+                            </div>
+                            <div class="box__bott">
+                                <p>Submit requirements to your assignment.</p>
+                            </div>
+                        </div>
+                        <div class="content__box">
+                            <div class="box__title">
+                                <div class="box__digit">
+                                    <p>2</p>
+                                </div>
+                                <div class="box__text">
+                                    <p>Keep in touch</p>
+                                </div>
+                            </div>
+                            <div class="box__bott">
+                                <p>Submit requirements to your assignment.</p>
+                            </div>
+                        </div>
+                        <div class="content__box">
+                            <div class="box__title">
+                                <div class="box__digit">
+                                    <p>3</p>
+                                </div>
+                                <div class="box__text">
+                                    <p>Get it done</p>
+                                </div>
+                            </div>
+                            <div class="box__bott">
+                                <p>Submit requirements to your assignment.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content__bott mt-3">
+                        <div class="dis-flex justify-content-between align-items-center">
+                            <div>
+                                <b>Easy as ABC!</b>
+                                <p>Just provide us with the clear instructions and wait for the completed
+                                    assignment.</p>
+                            </div>
+                            <div>
+                                <a href="{% url 'signup' %}"><button>Submit Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-7r text-center">
+                <div class="all-heading">
+                    <h3>New on Blog</h3>
+                </div>
+            </div>
+            <div class="ourblogs">
+                <div class="back-box">
+                    <div class="front-box">
+                        <div class="content-block">
+                            <div class="col-lg-12">
+                                <div class="row align-items-end">
+                                    <div class="col-lg-6">
+                                        <h3>Who Can Help Me <br> with My Assignment</h3>
+                                        <p>There are three certainties in this world: Death, Taxes and Homework
+                                            Assignments. No matter where you
+                                            study, and no matter…</p>
+                                        <span class="line"></span>
+                                        <a>
+                                            <div class="btn-read">Read more</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src='{% static "images/help-me-with-my-assignment-300x135.jpg"%}'
+                                            alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back-box-2">
+                    <div class="front-box-2">
+                        <div class="content-block">
+                            <div class="col-lg-12">
+                                <div class="row align-items-end">
+                                    <div class="col-lg-6">
+                                        <h3>HOW TO IMPROVE RESEARCH AND ANALYTICAL SKILLS</h3>
+                                        <p>There are three certainties in this world: Death, Taxes and Homework
+                                            Assignments. No matter where you
+                                            study, and no matter…</p>
+                                        <span class="line"></span>
+                                        <a>
+                                            <div class="btn-read">Read more</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src='{% static "images/research-analytical-skills.png"%}' alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-7r text-center">
+                <div class="all-heading container-simform-works3">
+                    <h3>
+                        Our Fields of expertise
+                    </h3>
+                </div>
+            </div>
+            <div class="container-simform-works2">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-116">
+                                <div class="workflow-no">1</div>
+                                <div class="img-block-2 text-center">
+                                    <img src='{% static "images/assemble-team.svg"%}' alt="image">
+                                </div>
+                                <h6>Science</h6>
+                                <p>We handle all aspects of vetting and choosing the right team that you don't have
+                                    the time, expertise,
+                                    or desire
+                                    to do. </p>
+                                <div class="arrow-img">
+                                    <img src='{% static "images/flow-arrow1.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-59">
+                                <div class="workflow-no egg-blue">2</div>
+                                <div class="img-block-2">
+                                    <img src='{% static "images/sprint-planning.svg"%}' alt="image">
+                                </div>
+                                <h6>Engineering</h6>
+                                <p>Sprint roadmap is a collective planning effort. Team members collaborate to
+                                    clarify items and ensure
+                                    shared
+                                    understanding.</p>
+                                <div class="arrow-img">
+                                    <img src='{% static "images/flow-arrow2.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-42">
+                                <div class="workflow-no light-peach">3</div>
+                                <div class="img-block-2">
+                                    <img src='{% static "images/tech-architech.svg"%}' alt="image">
+                                </div>
+                                <h6>Mathematics</h6>
+                                <p>We break monolithic apps into microservices. Decoupling the code allows teams to
+                                    move faster and more
+                                    independently.</p>
+                                <div class="arrow-img">
+                                    <img src='{% static "images/flow-arrow3.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-chart"><svg width="944" height="115" viewBox="0 0 944 115" version="1.1">
+                        <g id="Rectangle" transform="translate(8.000000, 8.000000)">
+                            <path
+                                d="M59,1h828c30.9,0,56,25.1,56,56v0c0,30.9-25.1,56-56,56H59C28.1,113,3,87.9,3,57v0C3,26.1,28.1,1,59,1z"
+                                id="theMotionPath" fill="#fff" fill-rule="nonzero" stroke="#DCE6FB0" strole-width="2">
+                            </path>
+                        </g>
+                        <g id="Rectangle1" transform="translate(0.000000, 0.000000)">
+                            <path
+                                d="M886.4,114.6H57.6c-31.5,0-57-26.6-57-56.5l0,0c0-29.9,25.5-57.5,57-57.5h828.9c31.5,0,57,27.6,57,57.5l0,0 C943.4,87.9,918,114.6,886.4,114.6z"
+                                id="theMotionPath1" fill="#fff" fill-rule="nonzero" stroke="#DCE6FB0" strole-width="2">
+                            </path>
+                        </g>
+                        <g id="Rectan" transform="translate(0.000000, 0.000000)">
+                            <path
+                                d="M879.9,107.1H64.1c-31.5,0-57-19.1-57-49l0,0c0-29.9,25.5-50,57-50h815.9c31.5,0,57,20.1,57,50l0,0  C936.9,87.9,911.5,107.1,879.9,107.1z"
+                                id="theMotionPath1" fill="#fff" fill-rule="nonzero" stroke="#BECCEA" strole-width="2">
+                            </path>
+                        </g>
+                        <circle cx="471.5" cy="7.5" r="6.5" fill="#FFF" stroke="#D3EEEC" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <circle cx="141.5" cy="7.5" r="6.5" fill="#FFF" stroke="#DCE6FB" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <circle cx="801.5" cy="7.5" r="6.5" fill="#FFF" stroke="#F2DDCE" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <circle cx="141.5" cy="107.5" r="6.5" fill="#FFF" stroke="#F6E5C5" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <circle cx="471.5" cy="107.5" r="6.5" fill="#FFF" stroke="#DCE6FB" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <circle cx="801.5" cy="107.5" r="6.5" fill="#FFF" stroke="#D3EEEC" stroke-linecap="round"
+                            stroke-width="2">
+                        </circle>
+                        <g id="plane1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Home" transform="translate(-548.000000, -10940.000000)" fill="#DCE6FB"
+                                fill-rule="nonzero">
+                                <g id="process" transform="translate(0.000000, 10548.000000)">
+                                    <g id="Group-17" transform="translate(247.000000, 145.000000)">
+                                        <g id="Process_linebar" transform="translate(0.000000, 7.000000)">
+                                            <path
+                                                d="M301.839209,248.888889 L301.839209,246.888889 L301.839209,241.724004 C301.839209,241.262783 302.213103,240.888889 302.674325,240.888889 C302.803972,240.888889 302.931839,240.919074 303.0478,240.977054 L315.377386,247.141848 C315.789915,247.348112 315.957126,247.849743 315.750861,248.262272 C315.670052,248.42389 315.539004,248.554938 315.377386,248.635747 L303.0478,254.80054 C302.635271,255.006805 302.133639,254.839595 301.927375,254.427066 C301.869395,254.311105 301.839209,254.183238 301.839209,254.053591 L301.839209,248.888889 Z"
+                                                id="Line"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <animateMotion xlink:href="#plane" dur="30s" repeatCount="indefinite" rotate="auto">
+                            <mpath xlink:href="#theMotionPath"></mpath>
+                        </animateMotion>
+                        <g id="plane" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Home1" transform="translate(-548.000000, -10940.000000)" fill="#DCE6FB"
+                                fill-rule="nonzero">
+                                <g id="process1" transform="translate(0.000000, 10548.000000)">
+                                    <g id="Group-171" transform="translate(247.000000, 145.000000)">
+                                        <g id="Process_linebar1" transform="translate(0.000000, 7.000000)">
+                                            <path
+                                                d="M301.839209,248.888889 L301.839209,246.888889 L301.839209,241.724004 C301.839209,241.262783 302.213103,240.888889 302.674325,240.888889 C302.803972,240.888889 302.931839,240.919074 303.0478,240.977054 L315.377386,247.141848 C315.789915,247.348112 315.957126,247.849743 315.750861,248.262272 C315.670052,248.42389 315.539004,248.554938 315.377386,248.635747 L303.0478,254.80054 C302.635271,255.006805 302.133639,254.839595 301.927375,254.427066 C301.869395,254.311105 301.839209,254.183238 301.839209,254.053591 L301.839209,248.888889 Z"
+                                                id="Line"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <animateMotion xlink:href="#plane1" dur="30s" repeatCount="indefinite" rotate="auto">
+                            <mpath xlink:href="#theMotionPath1"></mpath>
+                        </animateMotion>
+                    </svg></div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-116">
+                                <div class="workflow-no light-peach-2">4</div>
+                                <div class="img-block-2">
+                                    <img src='{% static "images/iterateIcon.svg"%}' alt="image">
+                                </div>
+                                <h6>Programming</h6>
+                                <p>We divide the implementation process into several checkpoints rather than a
+                                    single deadline.</p>
+                                <div class="arrow-img-reverse">
+                                    <img src='{% static "images/flow-arrow6.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-59">
+                                <div class="workflow-no light-purple">5</div>
+                                <div class="img-block-2">
+                                    <img src='{% static "images/code-reviews-icon.svg"%}' alt="image">
+                                </div>
+                                <h6>Economics</h6>
+                                <p>Code reviews before release help detect issues like memory leaks, file leaks,
+                                    performance signs, and
+                                    general bad
+                                    smells.</p>
+                                <div class="arrow-img-reverse">
+                                    <img src='{% static "images/flow-arrow5.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="assemble-box m-42">
+                                <div class="workflow-no light-green">6</div>
+                                <div class="img-block-2">
+                                    <img src='{% static "images/stand-ups-icon.svg"%}' alt="image">
+                                </div>
+                                <h6>Physics</h6>
+                                <p>Standups, weekly demos, and weekly reviews make sure everyone is on the same page
+                                    and can raise their
+                                    concerns.</p>
+                                <div class="arrow-img-reverse">
+                                    <img src='{% static "images/flow-arrow4.svg"%}' alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-7r text-center">
+                <div class="all-heading">
+                    <h3>
+                        ASSIGNMENT HELP FROM EXPERTS WITH HIGH QUALITY GUARANTEE
+                    </h3>
+                </div>
+            </div>
+            <div class="homecontent">
+                <p>
+                    Assignment Expert is a leading provider of assignment help to people worldwide. Our
+                    online services are quite extensive and cover many types of projects needed to be done
+                    by individuals and even businesses. You can submit your request online and get the
+                    solution within the shortest time. We guarantee quality and satisfaction. Otherwise, we
+                    won't be claiming reward!
+                </p>
+                <p>
+                    Once you get frustrated and struggling to accomplish your work on time, you need online
+                    assignment help. Assignment Expert understands your needs and provides you with reliable
+                    degree-holding specialists to complete your projects at affordable prices.
+                </p>
+                <h2>
+                    Assignment Expert is a professional and outstanding service with
+                </h2>
+                <ul class="homecontent__menu">
+                    <li>…support members available online 24/7 ready to assist you;</li>
+                    <li>…degree-holding experts in programming,&nbsp;mathematics, etc.;</li>
+                    <li>…responsible attitude and on-time delivery;</li>
+                    <li>…pocket-friendly prices that fit into your budget;</li>
+                    <li>…secure payment methods and 100% confidentiality;</li>
+                    <li>…and even FREE questions and answers service!</li>
+                </ul>
+                <p>
+                    We want to satisfy customers with their positive experience received here – at
+                    Assignment Expert. We are open to communication and happy to assist our clients.
+                </p>
+                <p>
+                    People order our services from every corner of the globe: USA, United Kingdom, Canada,
+                    etc. We are dedicated to your success, fulfilling your needs for accuracy and timely
+                    delivery. Our services are available for any task level. When you need the highest
+                    quality assignment help online we are here to help you. Reach us with live online chat
+                    or email us at info@assignmentexpert.com any time of the day.
+                </p>
+            </div>
+            <div class="homereviews">
+                <div class="homereviews__disflex">
+                    <h2>Latest Reviews</h2>
+                    <a href="">All reviews</a>
+                </div>
+            </div>
+            <div class="reviewsblock">
+                <div class="reviewsblock__title">
+                    <div class="dis-flex">
+                        <div class="reviewsblock__title__image">
+                            <img src='{% static "images/canada.svg"%}' alt="">
+                        </div>
+                        <p>334539, Algebra</p>
+                    </div>
+                    <div>
+                        <p>Jan 2023</p>
+                    </div>
+                </div>
+                <div class="reviewsblock__bott">
+                    <div class="rating__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Thank you for the assistance!
+                    </p>
+                </div>
+            </div>
+            <div class="reviewsblock">
+                <div class="reviewsblock__title">
+                    <div class="dis-flex">
+                        <div class="reviewsblock__title__image">
+                            <img src='{% static "images/canada.svg"%}' alt="">
+                        </div>
+                        <p>334539, Algebra</p>
+                    </div>
+                    <div>
+                        <p>Jan 2023</p>
+                    </div>
+                </div>
+                <div class="reviewsblock__bott">
+                    <div class="rating__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Thank you for the assistance!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock body %}
